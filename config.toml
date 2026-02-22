@@ -1,0 +1,17 @@
+# Default model fallback
+default_model = "local_mistral"
+
+[models.local_mistral]
+# The exact name of the Mistral model you downloaded in your local server
+# For example, in Ollama it might just be "mistral" or "mistral:instruct"
+name = "mistral" 
+
+# The local endpoint URL. 
+# Use http://localhost:11434/v1 for Ollama
+# Use http://localhost:1234/v1 for LM Studio
+api_base = "http://localhost:11434/v1" 
+
+# This links to the dummy key in your .env file
+api_key_env = "LOCAL_MISTRAL_API_KEY"
+# Required for Vector DB
+embedding_model = "nomic-embed-text"

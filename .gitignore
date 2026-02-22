@@ -1,0 +1,24 @@
+# --- Rust specific ---
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# --- AI & RAG specific ---
+# Exclude your local vector database and history
+vectors.json
+history.json
+.env
+
+# --- IDEs and Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Operating System ---
+Thumbs.db
+desktop.ini
+
+# --- Debugging/Logs ---
+*.log
