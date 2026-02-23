@@ -4,7 +4,7 @@ default_model = "local_mistral"
 [models.local_mistral]
 # The exact name of the Mistral model you downloaded in your local server
 # For example, in Ollama it might just be "mistral" or "mistral:instruct"
-name = "mistral" 
+name = "mistral:latest" 
 
 # The local endpoint URL. 
 # Use http://localhost:11434/v1 for Ollama
