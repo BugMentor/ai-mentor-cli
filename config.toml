@@ -1,6 +1,11 @@
 # Default model fallback
 default_model = "local_mistral"
 
+# Global timeout for Ollama requests in seconds. 
+# Increase this if you have a slow GPU or large context.
+# Default is 300 seconds.
+request_timeout_seconds = 600
+
 [models.local_mistral]
 # The exact name of the Mistral model you downloaded in your local server
 # For example, in Ollama it might just be "mistral" or "mistral:instruct"
@@ -9,7 +14,7 @@ name = "mistral:latest"
 # The local endpoint URL. 
 # Use http://localhost:11434/v1 for Ollama
 # Use http://localhost:1234/v1 for LM Studio
-api_base = "http://localhost:11434/v1" 
+api_base = "http://localhost:11434" 
 
 # This links to the dummy key in your .env file
 api_key_env = "LOCAL_MISTRAL_API_KEY"
